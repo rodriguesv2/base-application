@@ -2,6 +2,9 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android-extensions'
     id 'kotlin-android'
+    id 'androidx.navigation.safeargs'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 import br.com.rubensrodrigues.baseapplication.Dependencies
@@ -43,4 +46,16 @@ dependencies {
     implementation Dependencies.UI.appCompat
     implementation Dependencies.UI.material
     implementation Dependencies.UI.constraintLayout
+    implementation Dependencies.UI.recyclerView
+    implementation Dependencies.UI.glide
+
+    implementation Dependencies.Architecture.viewModel
+    implementation Dependencies.Architecture.liveData
+    implementation Dependencies.Architecture.runtime
+    implementation Dependencies.Architecture.coroutines
+    implementation Dependencies.Architecture.hilt
+    kapt Dependencies.Kapt.hilt
+
+    implementation Dependencies.Networking.retrofit
+    implementation Dependencies.Networking.gson
 }
