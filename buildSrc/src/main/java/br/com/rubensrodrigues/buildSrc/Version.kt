@@ -49,4 +49,12 @@ object Version {
     const val mockitoInline = "3.3.3"
     const val mockito = "2.2.0"
     const val coreTesting = "1.1.1"
+
+    //Compose
+    const val compose = "1.0.0"
+    const val constraintLayoutCompose = "1.0.0-beta01"
+    const val navigation = "2.4.0-alpha06"
+    const val viewBinding = "1.0.0"
+    const val coil = "1.3.0"
+    const val viewModel = "1.0.0-alpha07"
 }

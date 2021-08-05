@@ -104,6 +104,34 @@ object Dependency {
         )
     }
 
+    object Compose {
+        private const val compose = "androidx.compose.ui:ui:${Version.compose}"
+        private const val material = "androidx.compose.material:material:${Version.compose}"
+        private const val toolingPreview =
+            "androidx.compose.ui:ui-tooling-preview:${Version.compose}"
+        private const val constraintLayout =
+            "androidx.constraintlayout:constraintlayout-compose:${Version.constraintLayoutCompose}"
+        private const val navigation =
+            "androidx.navigation:navigation-compose:${Version.navigation}"
+        private const val viewBinding = "androidx.compose.ui:ui-viewbinding:${Version.viewBinding}"
+        private const val coil = "io.coil-kt:coil-compose:${Version.coil}"
+        private const val viewModel =
+            "androidx.lifecycle:lifecycle-viewmodel-compose:${Version.viewModel}"
+        private const val liveData = "androidx.compose.runtime:runtime-livedata:${Version.compose}"
+
+        val list = listOf(
+            compose,
+            material,
+            toolingPreview,
+            constraintLayout,
+            navigation,
+            viewBinding,
+            coil,
+            viewModel,
+            liveData
+        )
+    }
+
     object Test {
         private const val junit = "junit:junit:${Version.junit}"
         private const val mockitoInline = "org.mockito:mockito-inline:${Version.mockitoInline}"
