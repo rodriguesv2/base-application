@@ -2,7 +2,7 @@ package br.com.rubensrodrigues.buildSrc
 
 object Config {
 
-    const val applicationId = "br.com.rubensrodrigues.grocerylist"
+    const val applicationId = "br.com.rubensrodrigues.baseapplication"
 
     object AppVersion {
         private const val MAJOR = 0

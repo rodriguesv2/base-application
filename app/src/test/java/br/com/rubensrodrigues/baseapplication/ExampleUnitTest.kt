@@ -1,4 +1,4 @@
-package br.com.rubensrodrigues.grocerylist
+package br.com.rubensrodrigues.baseapplication
 
 import org.junit.Test
 

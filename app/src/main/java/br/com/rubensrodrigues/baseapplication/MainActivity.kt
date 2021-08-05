@@ -1,4 +1,4 @@
-package br.com.rubensrodrigues.grocerylist
+package br.com.rubensrodrigues.baseapplication
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -9,7 +9,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
-import br.com.rubensrodrigues.grocerylist.databinding.ActivityMainBinding
+import br.com.rubensrodrigues.baseapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
