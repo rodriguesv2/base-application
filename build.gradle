@@ -1,0 +1,25 @@
+import br.com.rubensrodrigues.buildSrc.Dependency
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        Dependency.Classpath.list.forEach { dependency ->
+            classpath dependency
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
