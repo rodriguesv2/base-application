@@ -9,8 +9,7 @@ class HeaderInterceptor(
 
     override fun intercept(chain: Interceptor.Chain): Response {
         val request = chain.request()
-        val newRequest = request
-            .newBuilder()
+        val newRequest = request.newBuilder()
 
         newRequest.apply {
             headers.forEach { header ->
@@ -20,7 +19,6 @@ class HeaderInterceptor(
                 )
             }
         }
-
 
         return chain.proceed(newRequest.build())
     }

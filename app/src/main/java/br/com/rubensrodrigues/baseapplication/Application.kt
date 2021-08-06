@@ -1,6 +1,6 @@
 package br.com.rubensrodrigues.baseapplication
 
-import android.support.multidex.MultiDexApplication
+import androidx.multidex.MultiDexApplication
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp

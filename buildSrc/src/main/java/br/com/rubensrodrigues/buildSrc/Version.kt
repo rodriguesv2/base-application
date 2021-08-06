@@ -12,7 +12,7 @@ package br.com.rubensrodrigues.buildSrc
  */
 object Version {
 
-    const val kotlin = "1.5.21"
+    const val kotlin = "1.5.10"
     const val googleService = "4.3.8"
     const val crashlyticsGradle = "2.7.1"
     const val gradle = "4.2.2"
