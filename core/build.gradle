@@ -17,5 +17,9 @@ dependencies {
         api dependency
     }
 
+    Dependency.Compose.list.forEach {dependency ->
+        api dependency
+    }
+
     kapt Dependency.Kapt.hiltCompiler
 }

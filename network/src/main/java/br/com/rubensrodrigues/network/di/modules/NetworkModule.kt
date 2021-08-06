@@ -1,6 +1,8 @@
-package br.com.rubensrodrigues.network.di.module
+package br.com.rubensrodrigues.network.di.modules
 
 import br.com.rubensrodrigues.network.BuildConfig
+import br.com.rubensrodrigues.network.Constants
+import br.com.rubensrodrigues.network.interceptors.HeaderInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -27,11 +29,13 @@ class NetworkModule {
     @Provides
     @ViewModelScoped
     fun providesOkHttp(
-        loggingInterceptor: HttpLoggingInterceptor
+        loggingInterceptor: HttpLoggingInterceptor,
+        headerInterceptor: HeaderInterceptor
     ): OkHttpClient.Builder {
         return OkHttpClient
             .Builder().apply {
                 interceptors().add(loggingInterceptor)
+                interceptors().add(headerInterceptor)
             }
     }
 
@@ -42,5 +46,11 @@ class NetworkModule {
             level = if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY
             else HttpLoggingInterceptor.Level.NONE
         }
+    }
+
+    @Provides
+    @ViewModelScoped
+    fun providesHeaderInterceptor(): HeaderInterceptor {
+        return HeaderInterceptor(*Constants.headers)
     }
 }
