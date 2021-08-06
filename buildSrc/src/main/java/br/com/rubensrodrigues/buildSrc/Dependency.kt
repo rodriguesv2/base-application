@@ -109,6 +109,7 @@ object Dependency {
         private const val material = "androidx.compose.material:material:${Version.compose}"
         private const val toolingPreview =
             "androidx.compose.ui:ui-tooling-preview:${Version.compose}"
+        const val tooling = "androidx.compose.ui:ui-tooling:${Version.compose}"
         private const val constraintLayout =
             "androidx.constraintlayout:constraintlayout-compose:${Version.constraintLayoutCompose}"
         private const val navigation =
@@ -123,6 +124,7 @@ object Dependency {
             compose,
             material,
             toolingPreview,
+            tooling,
             constraintLayout,
             navigation,
             viewBinding,

@@ -49,6 +49,11 @@ android {
 
 dependencies {
     implementation project(":core")
+    implementation project(":base")
+    implementation project(":data")
+    implementation project(":network")
+
+    implementation Dependency.Compose.tooling
 
     Dependency.App.list.forEach {dependency ->
         implementation dependency
