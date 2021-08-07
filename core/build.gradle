@@ -8,6 +8,7 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
+//Create the core/apikey.properties file with the TMDB auth v4 key
 def apiKeyPropertyFile = rootProject.file("core/apikey.properties")
 def apiKeyProperty = new Properties()
 apiKeyProperty.load(new FileInputStream(apiKeyPropertyFile))
