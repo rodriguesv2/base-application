@@ -8,8 +8,21 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
+def apiKeyPropertyFile = rootProject.file("core/apikey.properties")
+def apiKeyProperty = new Properties()
+apiKeyProperty.load(new FileInputStream(apiKeyPropertyFile))
+
 android {
     compileSdkVersion Config.SdkVersion.compileSdk
+
+    buildTypes {
+        release {
+            buildConfigField "String", 'API_KEY', "\"${apiKeyProperty['apiKey']}\""
+        }
+        debug {
+            buildConfigField "String", 'API_KEY', "\"${apiKeyProperty['apiKey']}\""
+        }
+    }
 }
 
 dependencies {

@@ -22,7 +22,7 @@ class NetworkModule {
     fun providesRetrofitBuilder(): Retrofit.Builder {
         return Retrofit
             .Builder()
-            .baseUrl(""/*TODO add the real url*/)
+            .baseUrl("https://api.themoviedb.org/3/")
             .addConverterFactory(GsonConverterFactory.create())
     }
 
