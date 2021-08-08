@@ -1,4 +1,4 @@
-package br.com.rubensrodrigues.baseapplication.features
+package br.com.rubensrodrigues.baseapplication.ui.features
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
