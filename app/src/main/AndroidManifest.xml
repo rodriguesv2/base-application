@@ -20,7 +20,7 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
 <!--        </activity>-->
-        <activity android:name="br.com.rubensrodrigues.baseapplication.ui.features.TesteActivity"
+        <activity android:name="br.com.rubensrodrigues.baseapplication.ui.features.MovieActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
